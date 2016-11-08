@@ -3,7 +3,8 @@ package com.ljheee.tetris;
 import java.applet.*;
 import java.awt.*;
 
-public class rrt extends Applet implements Runnable {
+public class RRT extends Applet implements Runnable {
+	private static final long serialVersionUID = 6146581752215474133L;
 	Font font = new Font("Dialog", Font.BOLD, 18);// 定义字体
 	Thread thread;// 定义线程
 	public java.awt.Graphics gg;// 定义图形变量
@@ -20,7 +21,7 @@ public class rrt extends Applet implements Runnable {
 	public boolean game;// 控制游戏开始开关
 
 	/**
-	 * 绘制七种图形并调用随机函数令它随机出现 
+	 * 绘制七种图形并调用随机函数令它随机出现
 	 */
 	public void begin() {
 		int i;
